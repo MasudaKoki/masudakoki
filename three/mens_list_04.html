@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta neme="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>MENS LOOK No.04</title>
+    <meta name="description" content="MENS_LOOK_04">
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@600;900&display=swap"
+      rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+</head>
+
+<body class="look_page">
+    <div class="wrapper">
+        <header>
+        </header>
+        <div class="content">
+            <main>
+                <div class="look_slide">
+                    <h2>URBAN CHESTER COAT</h2>
+                    <div class="slider_wrap">
+                        <ul class="center_slider">
+                            <li><img src="images/m_li_04.jpg" width="670" height="450" alt="MENS_list_02の写真01"></li>
+                            <li><img src="images/m_li_04_2.jpg" width="670" height="450" alt="MENS_list_01の写真02">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="link_btn">
+                    <a href="#X">View the details</a>
+                </p>
+            </main>
+        </div><!--.content-->
+    </div><!--wrapper-->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.center_slider').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            prevArrow: '<img src="images/l_arrow.svg" class="slide-arrow prev-arrow">',
+            nextArrow: '<img src="images/r_arrow.svg" class="slide-arrow next-arrow">',
+            variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 860,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }]
+        },
+            {
+                breakpoint: 430,
+                settings: {
+                    dots: false,
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            });
+
+    </script>
+</body>
+
+</html>

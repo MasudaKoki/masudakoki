@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta neme="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>WOMENS LOOK No.01</title>
+  <meta name="description" content="WOMENS_LOOK_01">
+  <!-- fonts -->
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+</head>
+
+<body class="look_page">
+  <div class="wrapper">
+    <header>
+      <nav class="global">
+        <ul class="gnav">
+          <li><a href="#">close</a>
+          </li><!--.menu-->
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <main>
+        <div class="look_slide">
+          <div class="slider_wrap">
+            <ul class="slider">
+              <li>
+                <img src="images/w_li_01.jpg" width="670" height="450" alt="WOMENS_list_01の写真01">
+              </li>
+              <li>
+                <img src="images/w_li_01.jpg" width="670" height="450" alt="WOMENS_list_01の写真02">
+              </li>
+              <li>
+                <img src="images/w_li_01.jpg" width="670" height="450" alt="WOMENS_list_01の写真03">
+              </li>
+              <li>
+                <img src="images/w_li_01.jpg" width="670" height="450" alt="WOMENS_list_01の写真04">
+              </li>
+              <li>
+                <img src="images/w_li_01.jpg" width="670" height="450" alt="WOMENS_list_01の写真05">
+              </li>
+              <li>
+                <img src="images/w_li_01.jpg" width="670" height="450" alt="WOMENS_list_01の写真06">
+              </li>
+            </ul><!--.slider_wrap_03-->
+            <ul class="slider_nav">
+              <li>
+                <img src="images/w_li_01.jpg" width="670" height="450" alt="WOMENS_list_01の写真01">
+              </li>
+              <li>
+                <img src="images/w_li_01.jpg" width="670" height="450" alt="WOMENS_list_01の写真02">
+              </li>
+              <li>
+                <img src="images/w_li_01.jpg" width="670" height="450" alt="WOMENS_list_01の写真03">
+              </li>
+              <li>
+                <img src="images/w_li_01.jpg" width="670" height="450" alt="WOMENS_list_01の写真04">
+              </li>
+              <li>
+                <img src="images/w_li_01.jpg" width="670" height="450" alt="WOMENS_list_01の写真05">
+              </li>
+              <li>
+                <img src="images/w_li_01.jpg" width="670" height="450" alt="WOMENS_list_01の写真06">
+              </li>
+            </ul><!--.slider_nav-->
+          </div><!--.slider_wrap-->
+      </main>
+    </div><!--.content-->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(".menu").hover(function () {
+        $(".sub_menu:not(:animated)", this).slideDown();
+      },
+        function () {
+          $(".sub_menu", this).slideUp();
+        });
+      $('.slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider_nav'
+      });
+      $('.slider_nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider',
+        dots: true,
+        centerMode: true,
+        centerPadding: '6%',
+        focusOnSelect: true
+      });
+    </script>
+
+
+  </div><!--wrapper-->
+</body>
+
+</html>
